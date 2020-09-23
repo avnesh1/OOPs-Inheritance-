@@ -1,0 +1,29 @@
+using System;
+
+namespace single_inheritence
+{
+    class bike                  //this is a father class
+    {
+        public void tyre()        //method
+        {
+            Console.WriteLine("this is tyre");
+        }
+    }
+    class car:bike                //this is a child class
+    {
+        public void body()
+        {
+            Console.WriteLine("this is carbody");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            car r = new car();          //object
+            r.body();
+            r.tyre();
+
+        }
+    }
+}
